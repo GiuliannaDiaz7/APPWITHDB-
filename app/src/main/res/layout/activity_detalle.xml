@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetalleActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalle del Producto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/tvProductoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: --"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/etNombreDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Producto"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/etStockDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stock (unidades)"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/etPrecioDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio (ej: 1500.50)"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Actualizar Producto"/>
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Eliminar Producto"
+        android:backgroundTint="#D81B1B"/>
+</LinearLayout>
